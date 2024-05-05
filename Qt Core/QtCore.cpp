@@ -40,24 +40,19 @@ void printUrlList(const QList<QUrl> &urlList) {
 }
 
 int main() {
-    // Test printIntList
     QList<int> myIntList = {1, 2, 3, 4, 5};
     printIntList(myIntList);
 
-    // Test printStringMap
     QMap<QString, QString> myStringMap = {{"name", "John"}, {"age", "30"}, {"city", "New York"}};
     printStringMap(myStringMap);
 
-    // Test printDoubleVector
     QVector<double> myDoubleVector = {3.14, 2.718, 1.618};
     printDoubleVector(myDoubleVector);
 
-    // Test printDateTime
     QDateTime myDateTime = QDateTime::currentDateTime();
     printDateTime(myDateTime);
 
-    // Test printUrlList
-    QList<QUrl> myUrlList = {QUrl("https://www.example.com"), QUrl("https://www.qt.io")};
+    QList<QUrl> myUrlList = {QUrl("https://www.facebook.com"), QUrl("https://www.qt.io")};
     printUrlList(myUrlList);
 
     return 0;
